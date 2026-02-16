@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        padding: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 600px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        animation: fadeIn 1.2s ease;
+    }
+
+    .card h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .message {
+        font-size: 16px;
+        line-height: 1.7;
+        opacity: 0.95;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            padding: 22px;
+        }
+
+        .card h1 {
+            font-size: 18px;
+        }
+
+        .message {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Ye bhejunga:</h1>
+    <div class="message">
+        Welll... When you said Awni will always be my first, that’s not true anymore. 
+        I moved on months ago when I stopped talking with her. 
+        And if I’m being real… I do like you. 
+        But I think I just never let myself think about you that way because I was scared of losing what we have. 
+        But I don’t want to ignore how I feel anymore… 
+        Well, I’d like to be with you.
+    </div>
+</div>
+
+</body>
+</html>
